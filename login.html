@@ -1,0 +1,394 @@
+
+	<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+<meta name="title" content="Squid VPN">
+<meta name="description" content="Squid VPN login page">
+<meta name="keywords" content="Squid VPN login page">
+<meta name="author" content="SquidvpnTeam">
+<meta name="owner" content="Squid VPN">
+<meta name="copyright" content="SquidvpnTeam">
+<meta name="propeller" content="7528e28db288bd427242af4442fdf4a0">
+<title>Login Page</title>
+<link rel="apple-touch-icon" href="http://squidvpn.cf/logo/favicon.ico">
+<link rel="shortcut icon" href="http://squidvpn.cf/logo/favicon.ico" type="image/x-icon">
+<link rel="icon" href="http://squidvpn.cf/logo/favicon.png">
+<link rel="icon" sizes="57x57" href="http://squidvpn.cf/logo/favicon-32x32.png">
+<link rel="icon" sizes="57x57" href="http://squidvpn.cf/logo/favicon-57x57.png">
+<link rel="icon" sizes="72x72" href="http://squidvpn.cf/logo/favicon-72x72.png">
+<link rel="icon" sizes="76x76" href="http://squidvpn.cf/logo/favicon-76x76.png">
+<link rel="icon" sizes="114x114" href="http://squidvpn.cf/logo/favicon-114x114.png">
+<link rel="icon" sizes="120x120" href="http://squidvpn.cf/logo/favicon-120x120.png">
+<link rel="icon" sizes="144x144" href="http://squidvpn.cf/logo/favicon-144x144.png">
+<link rel="icon" sizes="152x152" href="http://squidvpn.cf/logo/favicon-152x152.png">
+
+<meta name="msapplication-TileColor" content="#FFFFFF">	
+<meta name="msapplication-TileImage" content="http://squidvpn.cf/logo/favicon-144x144.png">
+<meta name="application-name" content="Squid VPN">
+    <!-- Main -->
+    <link rel="stylesheet" type="text/css" href="http://squidvpn.cf/bootstrap/main/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="http://squidvpn.cf/bootstrap/main/assets/css/ie10-viewport-bug-workaround.css">
+     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="bootstrap/main/assets/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="http://squidvpn.cf/bootstrap/main/assets/js/ie-emulation-modes-warning.js"></script>
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+	<!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="http://squidvpn.cf/bootstrap/dashboard/dist/css/FrontAdmin.css">
+    <link rel="stylesheet" type="text/css" href="http://squidvpn.cf/bootstrap/dashboard/dist/css/skins/_all-skins.css">
+	
+	<!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="http://squidvpn.cf/bootstrap/assets/fonts/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="http://squidvpn.cf/bootstrap/assets/fonts/web-icons/web-icons.css">
+	<link rel="stylesheet" type="text/css" href="http://squidvpn.cf/bootstrap/assets/alertifyjs/css/alertify.css">
+	<link rel="stylesheet" type="text/css" href="http://squidvpn.cf/bootstrap/assets/alertifyjs/css/themes/default.css">
+    <!-- Global -->
+	<link rel="stylesheet" type="text/css" href="http://squidvpn.cf/bootstrap/global/css/global.css" media="screen">
+
+    
+
+	<!--- Formvalidation.io -->	
+	<link rel="stylesheet" type="text/css" href="http://squidvpn.cf/bootstrap/assets/formvalidation/dist/css/formValidation.css">
+
+    <!-- SweetAlert2 UI -->
+    <link rel="stylesheet" type="text/css" href="http://squidvpn.cf/bootstrap/assets/sweetalert/sweetalert2.css">
+	<!-- SweetAlert2 Javascript -->
+    <script type="text/javascript" src="http://squidvpn.cf/bootstrap/assets/sweetalert/sweetalert2.js"></script>
+
+</head>
+<body class="hold-transition login-page">
+	<div class="login-box">
+		<div class="login-logo">
+			<a href="http://squidvpn.cf/"><img src="http://squidvpn.cf/logo/favicon-32x32.png"> Squid VPN</a>
+		</div>
+		<div class="login-box-body">
+		    <iframe data-aa='801611' src='//ad.a-ads.com/801611?size=320x50' scrolling='no' style='width:320px; height:50px; border:0px; padding:0;overflow:hidden' allowtransparency='true'></iframe>
+			<div id="success"></div>
+			<div id="loader"></div>
+			<form name="form" id="form" method="post" accept-charset="UTF-8" novalidate>
+				<p class="login-box-msg">Sign in to start your session</p>
+				<input type="hidden" id="submitted" name="submitted" value="Login Account" />
+				<input type="hidden" id="code" name="code" value="UWJTTk8ydnBWRlRCRFp5cjZHZXlIUFZWeG1HNkN1eGFHWkdqTVkrdjZjbEFNN28xS2hJSWoyRXZPOW9seFZPMQ==" />
+				<div class="login-errors alert alert-danger alert-dismissible">
+					<p>Errors list below: </p>
+					<ul></ul>
+				</div>
+				<div class="form-group has-feedback">
+					<input id="user" type="text" class="form-control" name="user_name" value="" placeholder="Username" required>
+					<label class="contriol-label" for="user_name">
+						<span class="glyphicon glyphicon-user form-control-feedback"></span>
+					</label>
+				</div>
+				<div class="form-group has-feedback">
+					<div class="input-group">
+						<input id="user_pass" type="password" class="form-control" name="user_pass" placeholder="Password" required>
+						<a class="input-group-addon" href="javascript:;" onclick="toggle_password('user_pass');" id="showhide"><i class="glyphicon glyphicon-eye-open"></i></a>
+					</div>
+					<div class="progress password-meter" id="signinpwdMeter">
+						<div class="progress-bar"></div>
+					</div>
+				</div>
+				<div class="form-group has-feedback">
+					<select id="category" name="category" class="form-control">
+						<option value="eWxlT3NteGVDa0hDREp4S3dyQStpUT09" selected="selected">Login Account</option>
+						<option value="V25KTTdSVDlBUkRwSHIrVGhFeHQva3hYdHlMS25wVnNmQ0graDVuVzJZRT0=">Unfreeze Account</option>
+					</select>
+					<label class="contriol-label" for="category">
+					</label>
+				</div>
+				<div class="form-group clearfix">
+					<a class="pull-left" href="/requestcode">Request Activation?</a>
+					<a class="pull-right" href="/recovery">Password Recovery?</a>
+				</div>
+				<input type='hidden' name='CSRFtoken' value='' >
+				<button type="submit" class="btn btn-primary btn-block" name="submitLogin">
+					<i class="glyphicon glyphicon-log-in"></i> Sign-in
+				</button>
+			</form>
+			<p>Still no account? Please go to <a href="/register">Sign up</a></p>
+		</div>
+	</div>
+	<!-- Core  -->
+	<script src="http://squidvpn.cf/bootstrap/assets/jquery/jquery-3.1.1.js"></script>
+	<script src="http://squidvpn.cf/bootstrap/dashboard/plugins/jQuery/jquery-2.2.3.min.js"></script>
+	<script src="http://squidvpn.cf/bootstrap/main/dist/js/bootstrap.js"></script>
+	<script src="http://squidvpn.cf/bootstrap/dashboard/plugins/slimScroll/jquery.slimscroll.js"></script>
+	<script src="http://squidvpn.cf/bootstrap/dashboard/plugins/fastclick/fastclick.js"></script>
+	<script src="http://squidvpn.cf/bootstrap/dashboard/dist/js/app.js"></script>
+ 
+	<!-- Custom File Upload -->
+    <script src="http://squidvpn.cf/bootstrap/assets/custom.fileupload/custom.fle_upload.js"></script>
+	<script src="http://squidvpn.cf/bootstrap/assets/jqueryform/jquery.form.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script type="text/javascript" src="http://squidvpn.cf/bootstrap/main/assets/js/ie10-viewport-bug-workaround.js"></script>
+	<script src="http://squidvpn.cf/bootstrap/assets/alertifyjs/alertify.js"></script>
+ 	<!-- Formvalidation.io -->   
+	<script type="text/javascript" src="http://squidvpn.cf/bootstrap/assets/formvalidation/dist/js/formValidation.js"></script>
+    <script type="text/javascript" src="http://squidvpn.cf/bootstrap/assets/formvalidation/dist/js/framework/bootstrap.js"></script>
+	<script type="text/javascript" src="http://squidvpn.cf/bootstrap/assets/formvalidation/vendor/addon/src/reCaptcha2.js"></script>
+<!-- Login -->
+<script>
+$(document).ready(function($){	
+	$('.login-errors').hide();
+	$('form').formValidation
+		({
+        framework: 'bootstrap',
+		excluded: ':disabled',
+		icon: null,
+		fields: 
+		{		
+			user_name:
+			{				
+				valid: true,
+				message: 'The Username is not valid',
+				validators: 
+				{
+                    notEmpty: 
+					{
+                    message: 'The Username is required and can\'t be empty'
+                    }
+                }
+			},
+			user_pass:
+			{				
+				valid: true,
+				message: 'The Password is not valid',
+				validators: 
+				{
+					notEmpty: 
+					{
+                    message: 'The Password is required and can\'t be empty'
+                    },
+					callback: 
+					{
+						callback: function(value, validator, $field) {
+						var score = 0;
+
+							if (value === '') {
+								return {
+									valid: true,
+									score: null
+								};
+							}
+
+							// Check the password strength
+							score += ((value.length >= 8) ? 1 : -1);
+
+							// The password contains uppercase character
+							if (/[A-Z]/.test(value)) {
+								score += 1;
+							}
+
+							// The password contains uppercase character
+							if (/[a-z]/.test(value)) {
+								score += 1;
+							}
+
+							// The password contains number
+							if (/[0-9]/.test(value)) {
+								score += 1;
+							}
+
+							// The password contains special characters
+							if (/[!#$%&^~*_]/.test(value)) {
+								score += 1;
+							}
+
+							return {
+								valid: true,
+								score: score    // We will get the score later
+							};
+						}
+					}
+                }
+            }
+        }
+    })
+        .on('success.validator.fv', function(e, data) {
+			
+            // The password passes the callback validator
+            if (data.field === 'user_pass' && data.validator === 'callback') {
+                // Get the score
+                var score = data.result.score,
+                    $bar  = $('#signinpwdMeter').find('.progress-bar');
+
+                switch (true) {
+                    case (score === null):
+                        $bar.html('').css('width', '0%').removeClass().addClass('progress-bar');
+                        break;
+
+                    case (score <= 0):
+                        $bar.html('Very weak').css('width', '25%').removeClass().addClass('progress-bar progress-bar-danger');
+                        break;
+
+                    case (score > 0 && score <= 2):
+                        $bar.html('Weak').css('width', '50%').removeClass().addClass('progress-bar progress-bar-warning');
+                        break;
+
+                    case (score > 2 && score <= 4):
+                        $bar.html('Medium').css('width', '75%').removeClass().addClass('progress-bar progress-bar-info');
+                        break;
+
+                    case (score > 4):
+                        $bar.html('Strong').css('width', '100%').removeClass().addClass('progress-bar progress-bar-success');
+                        break;
+
+                    default:
+                        break;
+                }
+            }			
+        })
+		
+        .on('success.form.fv', function(e, data) {
+          // Reset the message element when the form is valid
+          $('.login-errors').html(data);
+        })
+
+        .on('err.field.fv', function(e, data) {
+          // data.fv     --> The FormValidation instance
+          // data.field  --> The field name
+          // data.element --> The field element
+          $('.login-errors').show();
+
+          // Get the messages of field
+          var messages = data.fv.getMessages(data.element);
+
+          // Remove the field messages if they're already available
+          $('.login-errors').find('li[data-field="' + data.field +
+            '"]').remove();
+
+          // Loop over the messages
+          for (var i in messages) {
+            // Create new 'li' element to show the message
+            $('<li/>')
+              .attr('data-field', data.field)
+              .wrapInner(
+                $('<a/>')
+                .attr('href', 'javascript: void(0);')
+                // .addClass('alert alert-danger alert-dismissible')
+                .html(messages[i])
+                .on('click', function(e) {
+                  // Focus on the invalid field
+                  data.element.focus();
+                })
+              ).appendTo('.login-errors > ul');
+          }
+
+          // Hide the default message
+          // $field.data('fv.messages') returns the default element containing the messages
+          data.element
+            .data('fv.messages')
+            .find('.help-block[data-fv-for="' + data.field + '"]')
+            .hide();
+        })
+
+        .on('success.field.fv', function(e, data) {
+          // Remove the field messages
+          $('.login-errors > ul').find('li[data-field="' + data.field +
+            '"]').remove();
+          if ($('form').data('formValidation').isValid()) {
+            $('.login-errors').hide();
+          }
+        });
+/*
+	$('form').keypress(function(e){
+		if(e.keyCode=='13') //Keycode for "Return"
+		$('#submitLogin').click();
+	});	
+*/	
+});
+function toggle_password(target){
+    var d = document;
+    var tag = d.getElementById(target);
+    var tag2 = d.getElementById("showhide");
+
+    if (tag2.innerHTML == '<i class="glyphicon glyphicon-eye-open"></i>')
+	{
+        tag.setAttribute('type', 'text');   
+        tag2.innerHTML = '<i class="glyphicon glyphicon-eye-close"></i>';
+
+    } else {
+        tag.setAttribute('type', 'password');   
+        tag2.innerHTML = '<i class="glyphicon glyphicon-eye-open"></i>';
+    }
+}
+
+function new_password(target){
+    var d = document;
+    var tag = d.getElementById(target);
+    var tag2 = d.getElementById("newshowhide");
+
+    if (tag2.innerHTML == '<i class="glyphicon glyphicon-eye-open"></i>')
+	{
+        tag.setAttribute('type', 'text');   
+        tag2.innerHTML = '<i class="glyphicon glyphicon-eye-close"></i>';
+
+    } else {
+        tag.setAttribute('type', 'password');   
+        tag2.innerHTML = '<i class="glyphicon glyphicon-eye-open"></i>';
+    }
+}	
+
+function new_password2(target){
+    var d = document;
+    var tag = d.getElementById(target);
+    var tag2 = d.getElementById("newshowhide2");
+
+    if (tag2.innerHTML == '<i class="glyphicon glyphicon-eye-open"></i>')
+	{
+        tag.setAttribute('type', 'text');   
+        tag2.innerHTML = '<i class="glyphicon glyphicon-eye-close"></i>';
+
+    } else {
+        tag.setAttribute('type', 'password');   
+        tag2.innerHTML = '<i class="glyphicon glyphicon-eye-open"></i>';
+    }
+}
+</script>
+<!-- Login End -->
+
+<script>
+$('document').ready(function()
+{
+	var loading = $('#loader').html('<div class="text-center padding-40">'+
+	'<img src="bootstrap/global/css/loader/ajax-loader.gif" aria-hidden="true"><i></i> Please! Wait while checking your account...'+
+	'</div>').addClass('hide');
+	var $form = $('#form');
+	$form.ajaxForm({
+		type: "POST",
+		url: "http://squidvpn.cf//serverside/forms/login.php",
+		data: $form.serialize(),
+		beforeSend: function() {
+			loading.show().removeClass('hide');
+			$form.hide();
+		},
+		error: function(jqXHR, textStatus, errorThrown) {
+			$('#success').html(data);
+			$form.trigger('reset');
+			$form[0].reset();
+			$form.show();
+		},
+		success: function(data){
+			$('#success').html(data);
+			$form.trigger('reset');
+			$form[0].reset();
+			$form.show();
+		},
+		complete: function(){
+			loading.hide().addClass('hide');
+			$form.show();
+		}
+	});	
+});
+</script>
+</body>
+</html>
