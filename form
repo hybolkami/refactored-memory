@@ -2,8 +2,8 @@
 apt-get -y install zip unzip
 cd /home/vps/public_html/asset
 wget https://raw.githubusercontent.com/hybolkami/refactored-memory/master/salma.zip
-unzip nel.zip
-rm -f nel.zip
+unzip salma.zip
+rm -f salma.zip
 chown -R www-data:www-data /home/vps/public_html/asset
 chmod -R g+rw /home/vps/public_html/asset
 
